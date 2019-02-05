@@ -1,0 +1,46 @@
+
+
+
+
+
+/* ========================================
+            About Section
+=========================================== */
+#about{
+/* background-color: #947D7D; */
+margin: 1.5em;
+background-image: url('')
+}
+
+#about>.content-box{}
+
+#about>.content-box>.row>.col-md-4{
+  display: flex;
+}
+#about>.content-box>.about-title-box{
+  margin: 0;
+}
+
+#about>.content-box>.about-title-box>h3 .about-title{
+font-size: 1.8em;
+
+}
+
+#about>.content-box>.about-content-box{}
+
+#about>.content-box>.about-content-box>.about-content{
+  font-size: 1.5em;
+}
+
+#about>.content-box>.about-content-box>a.btn-about-more{
+  border: 1px solid blue;
+  text-decoration: none;
+}
+
+#about>.content-box>.about-content-box>.btn-about-more:hover,
+#about>.content-box>.about-content-box>.btn-about-more:focus{
+  cursor: pointer;
+  background-color: ;
+  color:;
+
+}
