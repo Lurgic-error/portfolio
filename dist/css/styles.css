@@ -1,0 +1,96 @@
+/*======================================
+                General
+========================================  */
+root {
+box-sizing: border-box;
+}
+*,
+::before,
+::after {
+box-sizing: inherit;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  font-family: 'Raleway', 'san-serif';
+  height: 100vh;
+  background: #333 url('../images/cover-2.jpg') no-repeat center center / cover;
+  color: #ccc;
+  overflow:hidden;
+}
+
+/*======================================
+                Home
+========================================  */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+/* .content{
+  z-index: 12;
+} */
+h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+h2{
+  font-size:2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Cursor */
+.txt-type>.txt{
+  border-right: 0.2rem solid #777;
+}
+
+@media (min-width: 1200px) {
+  h1{
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  h1{
+    font-size: 3rem;
+  }
+  .container{
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+}
+
+.overlay{
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
